@@ -1,5 +1,5 @@
 /*
-Package float64maxtrix provides provides minimal help to interpret a `[]float64` as a matrix.
+Package float64maxtrix provides minimal help to interpret a `[]float64` as a matrix.
 
 So that you can do things such as:
 
@@ -14,20 +14,34 @@ So that you can do things such as:
 	//
 	matrix := float64maxtrix.Make(slice, 2, 4)
 	
-	i,j := 0,3
 	
+	// Get the element of the matrix at i,j.
+	i,j := 0,3
 	x := matrix.I(i,j)
 	// x == 7.0
 	
 	
-	i,j = 1,2
+	// Set the element of the matrix at ii,jj, to 1000.0.
+	ii,jj := 1,2
 	value := 1000.0
-	matrix.Set(value, i,j)
+	matrix.Set(value, ii,jj)
 	// Matrix is now
 	//
 	//	| 1.0  3.0     5.0  7.0 |
 	//	| 2.0  4.0  1000.0  8.0 |
 	//
+	
+	
+	// Get column 2.
+	//
+	// I.e.,
+	//
+	//	|    5.0 |
+	//	| 1000.0 |
+	//
+	column2 := matrix.Column(2)
+
+This has applications to most things that use linear algebra.
 
 Motivation
 

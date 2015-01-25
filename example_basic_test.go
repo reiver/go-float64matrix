@@ -1,10 +1,10 @@
-package float64maxtrix_test
+package float64matrix_test
 
 import "fmt"
-import "github.com/reiver/go-float64maxtrix"
+import "github.com/reiver/go-float64matrix"
 
 
-// This example shows basic usage of float64maxtrix.
+// This example shows basic usage of float64matrix.
 func Example_basic() {
 
 	slice := []float64{1,2,3,4,5,6,7,8}
@@ -22,7 +22,7 @@ func Example_basic() {
 	// sharing the same memory. So if you change
 	// one you change the other.
 	//
-	matrix := float64maxtrix.Make(slice, 2, 4)
+	matrix := float64matrix.Make(slice, 2, 4)
 
 
 	// Output.

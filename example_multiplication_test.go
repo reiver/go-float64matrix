@@ -1,24 +1,24 @@
-package float64maxtrix_test
+package float64matrix_test
 
 import "fmt"
-import "github.com/reiver/go-float64maxtrix"
+import "github.com/reiver/go-float64matrix"
 
 
-// This example shows usage of float64maxtrix for matrix vector multiplication.
+// This example shows usage of float64matrix for matrix vector multiplication.
 // Note that there are more efficient ways of doing matrix vector multiplication;
 // this is show this way for the sake an example.
 func Example_multiplication() {
 
-	// Create indexer for a 2x3 maxtrix.
-	// I.e., a maxtrix with columns of length 2 and rows of length 3.
+	// Create indexer for a 2x3 matrix.
+	// I.e., a matrix with columns of length 2 and rows of length 3.
 	//
-	// This is the maxtrix:
+	// This is the matrix:
 	//
 	//	| 1 3 5 |
 	//	| 2 4 6 |
 	//
 	slice  := []float64{1, 2, 3, 4, 5, 6}
-	matrix := float64maxtrix.Make(slice, 2, 5)
+	matrix := float64matrix.Make(slice, 2, 5)
 
 
 	// Create a vector.

@@ -1,4 +1,4 @@
-package float64maxtrix
+package float64matrix
 
 
 // I returns the element of the matrix at i,j = column_index,row_index.

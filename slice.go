@@ -1,4 +1,4 @@
-package float64maxtrix
+package float64matrix
 
 
 // Slice returns the data of the matrix in []float64 slice form.

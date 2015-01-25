@@ -1,4 +1,4 @@
-package float64maxtrix
+package float64matrix
 
 
 // A T is the matrix data type.

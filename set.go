@@ -1,4 +1,4 @@
-package float64maxtrix
+package float64matrix
 
 
 // Set sets the element of the matrix at i,j = column_index,row_index.

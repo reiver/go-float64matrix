@@ -1,4 +1,4 @@
-package float64maxtrix
+package float64matrix
 
 
 // Column returns the "column_number" column as a []float64 slice.

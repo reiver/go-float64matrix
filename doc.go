@@ -1,5 +1,5 @@
 /*
-Package float64maxtrix provides minimal help to interpret a `[]float64` as a matrix.
+Package float64matrix provides minimal help to interpret a `[]float64` as a matrix.
 
 So that you can do things such as:
 
@@ -12,7 +12,7 @@ So that you can do things such as:
 	//	| 1.0  3.0  5.0  7.0 |
 	//	| 2.0  4.0  6.0  8.0 |
 	//
-	matrix := float64maxtrix.Make(slice, 2, 4)
+	matrix := float64matrix.Make(slice, 2, 4)
 	
 	
 	// Get the element of the matrix at i,j.
@@ -79,4 +79,4 @@ so that a programmer can create (what are called) 'cache-oblivious algorithms' (
 that can be optimized to take advantage of CPU caches, without knowing the cache size or the length or the cache line
 
 */
-package float64maxtrix
+package float64matrix
